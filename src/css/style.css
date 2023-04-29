@@ -1,0 +1,121 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+.hero {
+  /* background-image: url('carbon-footprint.jpg'); */
+  /* background-size: cover; */
+  /* background-position: center; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: #e6e6e6;
+  max-width: 900px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-content h1 {
+  font-size: 4.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: #3a3a3a;
+  color: #e6e6e6;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #4a4a4a;
+  color: #fff;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+.calc {
+  margin: 0 auto;
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.info {
+  min-height: 10vh;
+  background-color: hsl(189, 100%, 10%);
+}
+
+.info__header {
+  font-size: 1.5rem;
+}
+
+.info__text {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.slider-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.slider {
+  width: 100%;
+}
+
+.cars-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 1rem;
+}
+
+.car {
+  --size: 5.5rem;
+  width: var(--size);
+  height: calc(var(--size) / 2);
+  margin: 0 auto;
+  background-color: #ccc;
+  border-radius: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.car:has(~ .max),
+.max {
+  background-color: hsl(189, 90%, 70%);
+}
